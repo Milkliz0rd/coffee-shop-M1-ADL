@@ -2,10 +2,15 @@ package org.example;
 
 public class Caramel implements ITopping {
 
-    private static final int CARAMEL_PRICE = 1;
+    private static final double CARAMEL_PRICE = 0.5;
 
     @Override
-    public int getExtraPrice() {
+    public double getExtraPrice() {
         return CARAMEL_PRICE;
+    }
+
+    @Override
+    public String getName(){
+        return "Caramel";
     }
 }

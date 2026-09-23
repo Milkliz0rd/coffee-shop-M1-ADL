@@ -1,5 +1,6 @@
 package org.example;
 
 public interface ITopping {
-    int getExtraPrice();
+    double getExtraPrice();
+    String getName();
 }
