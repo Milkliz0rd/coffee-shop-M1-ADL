@@ -11,6 +11,6 @@ public class ChocolateCoulis implements ITopping{
 
     @Override
     public String getName() {
-        return "Chocolate Coulis";
+        return "Coulis au chocolat";
     }
 }
