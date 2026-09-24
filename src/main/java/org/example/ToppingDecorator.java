@@ -8,7 +8,7 @@ public abstract class ToppingDecorator extends Product {
         super(product.getName(), product.getSize());
         this.product = product;
     }
-    
+
     @Override
     public String getName() {
         return product.getName();
