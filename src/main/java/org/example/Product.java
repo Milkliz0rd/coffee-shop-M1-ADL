@@ -37,8 +37,10 @@ public abstract class Product {
 
     public String getDescription() {
         String description = getName();
+        boolean first = true;
         for (ITopping topping : toppings) {
-            description += " " + topping.getName() ;
+            description += (first ? " au " : " ") + topping.getName();
+            first = false;
         }
         return description;
     }
