@@ -3,7 +3,7 @@ package org.example;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Menu {
+public abstract class Menu {
 
     private final Map<String, ProductFactory> recipes = new HashMap<>();
 
