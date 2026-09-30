@@ -17,8 +17,8 @@ public class Main {
         order.addProduct(mocha);
 
         for (Product product : order.getProducts()) {
-            System.out.println(product.getDescription() + " : " + product.getPrice() + " €");
+            System.out.println(product.getDescription() + " : " + PriceFormatter.format(product.getPrice()));
         }
-        System.out.println("Total price: " + order.getTotalPrice() + " €");
+        System.out.println("Total price: " + PriceFormatter.format(order.getTotalPrice()));
     }
 }
