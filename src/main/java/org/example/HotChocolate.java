@@ -7,7 +7,7 @@ public class HotChocolate extends Drink {
     private final static int HOT_CHOCOLATE_L_PRICE = 500;
 
     public HotChocolate(Size size){
-        super("Chocolat Chaud", size);
+        super("Chocolat chaud", size);
     }
 
     @Override
