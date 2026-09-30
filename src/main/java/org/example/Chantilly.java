@@ -23,4 +23,9 @@ public class Chantilly extends ToppingDecorator {
     protected String getToppingName() {
         return "Chantilly";
     }
+
+    @Override
+    protected String getToppingArticle() {
+        return "à la";
+    }
 }

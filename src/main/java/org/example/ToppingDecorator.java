@@ -14,7 +14,6 @@ public abstract class ToppingDecorator extends Product {
         return product.getName();
     }
 
-
      @Override
      public Size getSize() {
         return product.getSize();
@@ -27,9 +26,14 @@ public abstract class ToppingDecorator extends Product {
 
      @Override
      public String getDescription() {
-         return product.getDescription() + " " + getToppingName();
+         if(product instanceof ToppingDecorator){
+            return product.getDescription() + " " + getToppingName();
+         }
+         return product.getDescription()+ " " + getToppingArticle() + " " + getToppingName();
      }
 
     protected abstract double getToppingPrice();
     protected abstract String getToppingName();
+    protected abstract String getToppingArticle();
+
 }

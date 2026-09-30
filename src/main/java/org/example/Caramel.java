@@ -17,4 +17,9 @@ public class Caramel extends ToppingDecorator {
     protected String getToppingName(){
         return "Caramel";
     }
+
+    @Override
+    protected String getToppingArticle(){
+        return "au";
+    }
 }

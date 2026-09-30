@@ -18,4 +18,8 @@ public class MochaExtra extends ToppingDecorator{
         return "Mocha";
     }
 
+    @Override
+    protected String getToppingArticle() {
+        return "au";
+    }
 }

@@ -17,4 +17,9 @@ public class ChocolateCoulis extends ToppingDecorator{
     public String getToppingName() {
         return "Coulis au chocolat";
     }
+
+    @Override
+    protected String getToppingArticle(){
+        return "au";
+    }
 }
