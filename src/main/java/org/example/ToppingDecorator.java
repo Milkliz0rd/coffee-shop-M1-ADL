@@ -20,7 +20,7 @@ public abstract class ToppingDecorator extends Product {
      }
 
      @Override
-     public double getBasePrice() {
+     public int getBasePrice() {
          return product.getPrice() + getToppingPrice();
      }
 
@@ -32,7 +32,7 @@ public abstract class ToppingDecorator extends Product {
          return product.getDescription()+ " " + getToppingArticle() + " " + getToppingName();
      }
 
-    protected abstract double getToppingPrice();
+    protected abstract int getToppingPrice();
     protected abstract String getToppingName();
     protected abstract String getToppingArticle();
 

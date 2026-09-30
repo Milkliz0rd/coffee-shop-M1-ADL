@@ -2,14 +2,14 @@ package org.example;
 
 public class Caramel extends ToppingDecorator {
 
-    private static final double CARAMEL_PRICE = 0.5;
+    private static final int CARAMEL_PRICE = 50;
 
     public Caramel(Product product){
         super(product);
     }
 
     @Override
-    protected double getToppingPrice(){
+    protected int getToppingPrice(){
         return CARAMEL_PRICE;
     }
 

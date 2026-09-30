@@ -22,11 +22,11 @@ public abstract class Product {
         return getName();
     };
 
-    public double getPrice(){
+    public int getPrice(){
         return getBasePrice();
     }
 
-    protected abstract double getBasePrice();
+    protected abstract int getBasePrice();
 
 
 }

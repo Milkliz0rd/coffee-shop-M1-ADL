@@ -2,14 +2,14 @@ package org.example;
 
 public class MochaExtra extends ToppingDecorator{
 
-    private static final double PRICE_EXTRA_MOCHA = 1;
+    private static final int PRICE_EXTRA_MOCHA = 100;
 
     public MochaExtra(Product product){
         super(product);
     }
 
     @Override
-    public double getToppingPrice() {
+    public int getToppingPrice() {
         return PRICE_EXTRA_MOCHA;
     }
 

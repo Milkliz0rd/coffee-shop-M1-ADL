@@ -10,8 +10,8 @@ public class Order {
         products.add(item);
     }
 
-    public double getTotalPrice() {
-        double totalPrice = 0;
+    public int getTotalPrice() {
+        int totalPrice = 0;
         for (Product item : products) {
             totalPrice += item.getPrice();
         }

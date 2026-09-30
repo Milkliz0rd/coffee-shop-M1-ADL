@@ -2,16 +2,16 @@ package org.example;
 
 public class Tea extends Drink {
 
-    private final static double TEA_S_PRICE = 2;
-    private final static double TEA_M_PRICE = 2.50;
-    private final static double TEA_L_PRICE = 3;
+    private final static int TEA_S_PRICE = 200;
+    private final static int TEA_M_PRICE = 250;
+    private final static int TEA_L_PRICE = 300;
 
     public Tea(Size size){
         super("Thé", size);
     }
 
     @Override
-    protected double getBasePrice() {
+    protected int getBasePrice() {
         return switch (getSize()){
             case S -> TEA_S_PRICE;
             case M -> TEA_M_PRICE;
