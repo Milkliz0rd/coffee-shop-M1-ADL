@@ -21,11 +21,6 @@ public abstract class ToppingDecorator extends Product {
      }
 
      @Override
-     public void addTopping(ITopping topping) {
-         product.addTopping(topping);
-     }
-
-     @Override
      public double getBasePrice() {
          return product.getPrice() + getToppingPrice();
      }
