@@ -1,16 +1,20 @@
 package org.example;
 
-public class ChocolateCoulis implements ITopping{
+public class ChocolateCoulis extends ToppingDecorator{
 
     private static final double PRICE_CHOCOLATE_COULIS = 1;
 
+    public ChocolateCoulis(Product product){
+        super(product);
+    }
+
     @Override
-    public double getExtraPrice() {
+    public double getToppingPrice() {
         return  PRICE_CHOCOLATE_COULIS;
     }
 
     @Override
-    public String getName() {
+    public String getToppingName() {
         return "Coulis au chocolat";
     }
 }

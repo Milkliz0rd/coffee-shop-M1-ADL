@@ -7,9 +7,7 @@ public class Main {
         Product coffee = new Coffee(Size.L);
         order.addProduct(coffee);
 
-        Product tea =new Tea(Size.M);
-        tea.addTopping(new Caramel());
-        tea.addTopping(new MochaExtra());
+        Product tea = new MochaExtra(new Caramel(new Tea(Size.M)));
         order.addProduct(tea);
 
         Product hotChocolate = new Chantilly(new HotChocolate(Size.S));

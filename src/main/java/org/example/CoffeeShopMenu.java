@@ -6,8 +6,8 @@ public class CoffeeShopMenu extends Menu {
          register("Café", size -> new Coffee(size));
          register("Thé", size -> {
              Product tea = new Tea(size);
-             tea.addTopping(new Caramel());
-             tea.addTopping(new MochaExtra());
+            // tea.addTopping(new Caramel());
+            // tea.addTopping(new MochaExtra());
              return tea;
          });
          register("Chocolat chaud", size -> {

@@ -1,16 +1,20 @@
 package org.example;
 
-public class MochaExtra implements ITopping{
+public class MochaExtra extends ToppingDecorator{
 
     private static final double PRICE_EXTRA_MOCHA = 1;
 
+    public MochaExtra(Product product){
+        super(product);
+    }
+
     @Override
-    public double getExtraPrice() {
+    public double getToppingPrice() {
         return PRICE_EXTRA_MOCHA;
     }
 
     @Override
-    public String getName(){
+    public String getToppingName(){
         return "Mocha";
     }
 
