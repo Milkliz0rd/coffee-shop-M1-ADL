@@ -1,6 +1,6 @@
 package org.example;
 
-public class Coffee extends Drink {
+public class Coffee extends BaseProduct implements Drink {
 
    private final static int COFFEE_S_PRICE = 100;
    private final static int COFFEE_M_PRICE = 150;
