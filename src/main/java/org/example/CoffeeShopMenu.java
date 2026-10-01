@@ -1,6 +1,6 @@
 package org.example;
 
-public class CoffeeShopMenu extends Menu {
+public class CoffeeShopMenu extends Menu<Drink> {
 
      public CoffeeShopMenu() {
          register("Café", size -> new Coffee(size));

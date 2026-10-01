@@ -1,5 +1,5 @@
 package org.example;
 
-public interface ProductFactory {
-    Product create(Size size);
+public interface ProductFactory<T extends Product> {
+    T create(Size size);
 }

@@ -1,11 +1,11 @@
 package org.example;
 
-public class MochaExtra extends ToppingDecorator{
+public class MochaExtra extends DrinkTopping {
 
     private static final int PRICE_EXTRA_MOCHA = 100;
 
-    public MochaExtra(Product product){
-        super(product);
+    public MochaExtra(Drink drink){
+        super(drink);
     }
 
     @Override

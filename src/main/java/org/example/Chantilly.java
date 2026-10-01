@@ -1,13 +1,13 @@
 package org.example;
 
-public class Chantilly extends ToppingDecorator {
+public class Chantilly extends DrinkTopping {
 
     private static final int PRICE_S = 50;
     private static final int PRICE_M = 100;
     private static final int PRICE_L = 150;
 
-    public Chantilly(Product product) {
-        super(product);
+    public Chantilly(Drink drink) {
+        super(drink);
     }
 
     @Override

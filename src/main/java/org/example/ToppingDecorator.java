@@ -1,11 +1,10 @@
 package org.example;
 
-public abstract class ToppingDecorator extends BaseProduct {
+public abstract class ToppingDecorator < T extends Product > implements Product {
 
-    protected final Product product;
+    protected final T product;
 
-    protected ToppingDecorator(Product product) {
-        super(product.getName(), product.getSize());
+    protected ToppingDecorator(T product) {
         this.product = product;
     }
 
@@ -20,7 +19,7 @@ public abstract class ToppingDecorator extends BaseProduct {
      }
 
      @Override
-     public int getBasePrice() {
+     public int getPrice() {
          return product.getPrice() + getToppingPrice();
      }
 
