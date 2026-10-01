@@ -1,6 +1,6 @@
 package org.example;
 
-public abstract class ToppingDecorator extends Product {
+public abstract class ToppingDecorator extends BaseProduct {
 
     protected final Product product;
 
