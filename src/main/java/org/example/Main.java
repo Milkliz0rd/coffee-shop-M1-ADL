@@ -2,23 +2,14 @@ package org.example;
 
 public class Main {
     static void main(String[] args) {
+        CoffeeShopMenu menu = new CoffeeShopMenu();
         Order order = new Order();
 
-        Product coffee = new Coffee(Size.L);
-        order.addProduct(coffee);
+        order.addProduct(menu.create("Café", Size.L));
+        order.addProduct(menu.create("Chocolat viennois", Size.M));
+        order.addProduct(new Caramel(new Chantilly(menu.create("Thé", Size.S))));
+        order.addProduct(menu.create("Café caramel chantilly", Size.M));
 
-        Product tea = new MochaExtra(new Caramel(new Tea(Size.M)));
-        order.addProduct(tea);
-
-        Product hotChocolate = new Chantilly(new HotChocolate(Size.S));
-        order.addProduct(hotChocolate);
-
-        Product mocha = new Chantilly(new Mocha(Size.L));
-        order.addProduct(mocha);
-
-        for (Product product : order.getProducts()) {
-            System.out.println(product.getDescription() + " : " + PriceFormatter.format(product.getPrice()));
-        }
-        System.out.println("Total price: " + PriceFormatter.format(order.getTotalPrice()));
+        Receipt.print(order);
     }
 }
